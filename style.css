@@ -1,0 +1,142 @@
+body {
+	background-image: url("images/fight1.jpg"); 
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Anton'; 
+}
+h1 {
+	text-align: center;
+	color: black;
+	font-family: 'Anton'; font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+
+#box1 {
+	float: left;
+	vertical-align: top;
+	height: 300px;
+	width: 250px;
+	position: absolute;
+	top: 0px;
+	left: 30px;
+}
+
+#box2 {
+	float: right;
+	height: 300px;
+	width: 250px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+#notificationCenter {
+	margin: auto;
+	text-align: center;
+	width: 30%;
+	border: solid red;
+	font-size: 25px;
+
+}
+
+#submit { 
+	background-color: #8B0000;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 4px 2px;
+}
+
+
+
+#the-rock {
+	height: 300px;
+	width: 225px;
+	/*visibility: hidden*/
+	display: none;
+	position: absolute;
+	left:250px;
+	bottom:20px;
+}
+
+#paper {
+	height: 300px;
+	width: 225px;
+	/*visibility: hidden;*/
+	display: none;
+	position: absolute;
+	left:250px;
+	bottom:20px;
+}
+
+#scissor {
+	height: 300px;
+	width: 225px;
+	/*visibility: hidden;*/
+	display: none;
+	position: absolute;
+	left:250px;
+	bottom:20px;
+}
+
+#the-rock2 {
+	height: 300px;
+	width: 225px;
+	/*visibility: hidden*/
+	display: none;
+	position: absolute;
+	right:250px;
+	bottom:20px;
+}
+
+#paper2 {
+	height: 300px;
+	width: 200px;
+	/*visibility: hidden;*/
+	display: none;
+	position: absolute;
+	right:250px;
+	bottom:20px;
+}
+
+#scissor2 {
+	height: 300px;
+	width: 225px;
+	/*visibility: hidden;*/
+	display: none;
+	position: absolute;
+	right:250px;
+	bottom:20px;
+}
+
+
+
+
+
+
+/*#topBox { 
+	display: inline
+ }*/
+/*#box{
+	height: 300px;
+	width: 250px;
+	display: inline-block;
+	text-align: center;
+	margin: 1%;
+}
+*/
+
+
+
+
+
+
