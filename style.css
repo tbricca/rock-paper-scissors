@@ -10,14 +10,13 @@ h1 {
 	text-align: center;
 	color: black;
 	font-family: 'Bangers', cursive;
-	font-size: 60px;
+	font-size: 70px;
+	margin-top: auto;
 }
 
 h2 {
 	font-size: 30px;
 }
-
-
 
 #box1 {
 	float: left;
@@ -26,10 +25,8 @@ h2 {
 	width: 250px;
 	position: absolute;
 	top: 0px;
-	left: 30px;
-	
+	left: 30px;	
 }
-
 
 #box2 {
 	float: right;
@@ -37,8 +34,7 @@ h2 {
 	width: 250px;
 	position: absolute;
 	top: 0px;
-	right: 0px;
-	
+	right: 0px;	
 }
 #player1 {
 	text-decoration: underline;
@@ -65,23 +61,29 @@ p {
 #notificationCenter {
 	margin: auto;
 	text-align: center;
-	width: 400px;
-	height: 60px;
-	border: solid red;
-	font-size: 35px;
+	width: 500px;
+	height: 80px;
+	border: thick solid red;
+	font-size: 40px;
 	font-weight: 1100;
+}
 
+#selectors { 
+	font-size: 40px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	width: 500px;
+	margin: auto;
+	font: 30px;
 
 }
+
 #p1SelectWeapon {
 	font-size: 25px;
 	text-decoration: underline; 
  }
 
- #rockRadio {
- 	font-size: 40px;
- 	text-decoration: none;
- }
 
 #submit { 
 	background-color: #8B0000;
@@ -89,8 +91,9 @@ p {
 	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 24px;
 	margin: 4px 2px;
+	font-family: 'Bangers', cursive;
 }
 
 #the-rock {
@@ -148,34 +151,29 @@ p {
 	bottom:20px;
 }
 
-#selectors { 
-	font-size: 25px;
-	text-align: center;
-}
 
 #countdown {
 	top: 50%;
 	left: 50%;
-	margin-top: -50px;
+	margin-top: 10px;
   	margin-left: 500px;
-  	float: center;
 
 }
 
 #three {
-	height: 400px;
-	width: 275px;
+	height: 350px;
+	width: 225px;
 	display: none;
 }
 
 #two {
-	height: 400px;
-	width: 275px;
+	height: 350px;
+	width: 225px;
 	display: none;
 }
 #fight {
-	height: 200px;
-	width: 400px;
+	height: 350px;
+	width: 225px;
 	display: none;
 }
 

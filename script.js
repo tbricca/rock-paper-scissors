@@ -50,9 +50,8 @@ $("#submit").click(function(){
 	}, 3500);
 	setTimeout (function (){
 		automaticRefresh ();
-	}, 6000);
+	}, 8000);
 });	
-
 
 var computerChoice = function() {
 	console.log ("computer is here");
