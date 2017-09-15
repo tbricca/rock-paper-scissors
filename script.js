@@ -7,7 +7,7 @@ var notificationUpdate = document.getElementById ("notificationCenter")
 $('#rockRadio').click(function(){
 	console.log ('click happened');
 	$("#rockRadio").is(':checked');
-	$("#the-rock").toggle();
+	$("#the-rock").fadeIn();
 	$("#paper").css("display","none");
 	$("#scissor").css("display","none");
 	$("#notificationCenter").text("Click Submit to Play Your Move");
@@ -15,14 +15,14 @@ $('#rockRadio').click(function(){
 
 $('#paperRadio').click(function(){
 	console.log ('click happened');
-	$("#paper").toggle();
+	$("#paper").fadeIn();
 	$("#the-rock").css("display","none");
 	$("#scissor").css("display","none");
 	$("#notificationCenter").text("Click Submit to Play Your Move");
 });
 
 $('#scissorRadio').click(function(){
-	$("#scissor").toggle();
+	$("#scissor").fadeIn();
 	$("#the-rock").css("display","none");
 	$("#paper").css("display","none");
 	$("#notificationCenter").text("Click Submit to Play Your Move");
@@ -31,31 +31,43 @@ $('#scissorRadio').click(function(){
 
 var randomNumber = 0;
 $("#submit").click(function(){
+	$("#three").fadeIn(500).fadeOut(500, function() {
+		$("#two").fadeIn(500).fadeOut(500, function() {
+			$("#one").fadeIn(500).fadeOut(500);
+		});	
+	});
+	
+	
+	// $("#fight").fadeIn(4000).delay(1000).fadeOut(10);
+
 	$('#submit').attr('disabled','disabled');
+	
 	randomNumber = (Math.floor(Math.random() * 3) + 1);
 	console.log ('math happened ' + randomNumber);
-	computerChoice();
-	determineWinner();
+	setTimeout (function(){
+		computerChoice();
+		determineWinner();
+	}, 3500);
 	setTimeout (function (){
 		automaticRefresh ();
-	}, 3000);
+	}, 6000);
 });	
 
 
 var computerChoice = function() {
 	console.log ("computer is here");
 	if (randomNumber === 1) {
-		$("#the-rock2").toggle();
+		$("#the-rock2").fadeIn();
 		$("#paper2").css("display","none");
 		$("#scissor2").css("display","none");
 	}
 	else if (randomNumber === 2) {
-		$("#paper2").toggle();
+		$("#paper2").fadeIn();
 		$("#the-rock2").css("display","none");
 		$("#scissor2").css("display","none");
 	}
 	else if (randomNumber === 3) {
-		$("#scissor2").toggle();
+		$("#scissor2").fadeIn();
 		$("#the-rock2").css("display","none");
 		$("#paper2").css("display","none");
 	}
@@ -82,13 +94,11 @@ determineWinner = function () {
 		console.log ('p1 wins');
 		$("#notificationCenter").text("Player 1 Wins!");
 		p1Win();
-		winnerNotification();
 	}
 	else if (randomNumber === 1 && radio3.checked){
 		console.log ('comp wins');
 		$("#notificationCenter").text("Computer Wins!");
 		compWin();
-		winnerNotification();
 	}
 	if (randomNumber === 2 && radio1.checked){
 		$("#notificationCenter").text("Computer Wins!");
@@ -100,7 +110,6 @@ determineWinner = function () {
 	else if (randomNumber === 2 && radio3.checked){
 		$("#notificationCenter").text("Player 1 Wins!");
 		p1Win();
-		winnerNotification();
 	}
 	if (randomNumber === 3 && radio1.checked){
 		$("#notificationCenter").text("Computer Wins!");
@@ -128,6 +137,28 @@ automaticRefresh = function () {
 	$('#scissorRadio').removeAttr("checked");
 	$('#submit').removeAttr('disabled');
 }
+
+/*(function($) {
+    var speed = 300;
+    var first = 0;
+    var pause = 3000;
+
+    function tick() {
+        first = $('ul#ticker li:first').html();
+        $('ul#ticker li:first').animate({
+            height: 0
+        }, speed).hide('medium', function() {
+            $(this).remove();
+            last = '<li>' + first + '</li>';
+            $('ul#ticker').append(last);
+        });
+    }
+    $('ul#ticker').click(function() {
+        tick();
+        return false;
+    });
+    setInterval(tick, pause);
+})*/
 
 /*var winnerNotification = function () {
         $('#notificationCenter').

@@ -4,17 +4,19 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-family: 'Anton'; 
+	font-family: 'Bangers', cursive;
 }
 h1 {
 	text-align: center;
 	color: black;
-	font-family: 'Anton'; font-size: 40px;
+	font-family: 'Bangers', cursive;
+	font-size: 60px;
 }
 
 h2 {
 	font-size: 30px;
 }
+
 
 
 #box1 {
@@ -25,7 +27,9 @@ h2 {
 	position: absolute;
 	top: 0px;
 	left: 30px;
+	
 }
+
 
 #box2 {
 	float: right;
@@ -34,17 +38,50 @@ h2 {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	
+}
+#player1 {
+	text-decoration: underline;
+	font-size: 40px;
 }
 
+#player2 {
+	text-decoration: underline;
+	font-size: 30px;
+}
+
+#p1Score {
+	font-size: 40px;
+}
+
+#p2Score {
+	font-size: 40px;
+}
+
+p {
+	font-size: 20px;
+}
 
 #notificationCenter {
 	margin: auto;
 	text-align: center;
-	width: 30%;
+	width: 400px;
+	height: 60px;
 	border: solid red;
-	font-size: 25px;
+	font-size: 35px;
+	font-weight: 1100;
+
 
 }
+#p1SelectWeapon {
+	font-size: 25px;
+	text-decoration: underline; 
+ }
+
+ #rockRadio {
+ 	font-size: 40px;
+ 	text-decoration: none;
+ }
 
 #submit { 
 	background-color: #8B0000;
@@ -56,12 +93,10 @@ h2 {
 	margin: 4px 2px;
 }
 
-
-
 #the-rock {
 	height: 300px;
 	width: 225px;
-	/*visibility: hidden*/
+
 	display: none;
 	position: absolute;
 	left:250px;
@@ -71,7 +106,6 @@ h2 {
 #paper {
 	height: 300px;
 	width: 225px;
-	/*visibility: hidden;*/
 	display: none;
 	position: absolute;
 	left:250px;
@@ -81,7 +115,6 @@ h2 {
 #scissor {
 	height: 300px;
 	width: 225px;
-	/*visibility: hidden;*/
 	display: none;
 	position: absolute;
 	left:250px;
@@ -91,7 +124,6 @@ h2 {
 #the-rock2 {
 	height: 300px;
 	width: 225px;
-	/*visibility: hidden*/
 	display: none;
 	position: absolute;
 	right:250px;
@@ -101,7 +133,6 @@ h2 {
 #paper2 {
 	height: 300px;
 	width: 200px;
-	/*visibility: hidden;*/
 	display: none;
 	position: absolute;
 	right:250px;
@@ -111,29 +142,50 @@ h2 {
 #scissor2 {
 	height: 300px;
 	width: 225px;
-	/*visibility: hidden;*/
 	display: none;
 	position: absolute;
 	right:250px;
 	bottom:20px;
 }
 
-
-
-
-
-
-/*#topBox { 
-	display: inline
- }*/
-/*#box{
-	height: 300px;
-	width: 250px;
-	display: inline-block;
+#selectors { 
+	font-size: 25px;
 	text-align: center;
-	margin: 1%;
 }
-*/
+
+#countdown {
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+  	margin-left: 500px;
+  	float: center;
+
+}
+
+#three {
+	height: 400px;
+	width: 275px;
+	display: none;
+}
+
+#two {
+	height: 400px;
+	width: 275px;
+	display: none;
+}
+#fight {
+	height: 200px;
+	width: 400px;
+	display: none;
+}
+
+#one {
+	height: 400px;
+	width: 275px;
+	display: none;
+
+
+
 
 
 
