@@ -40,7 +40,7 @@ $("#submit").click(function(){
 	}, 3500);
 	setTimeout (function (){
 		automaticRefresh ();
-	}, 8000);
+	}, 7000);
 });	
 
 var computerChoice = function() {
@@ -69,7 +69,7 @@ var p1Win = function () {
 	$('#p1Score').text(Number($('#p1Score').text())+1);
 }
 var compWin = function () {
-	$('#p2Score').text(Number($('p2Score').text())+1);
+	$('#p2Score').text(Number($('#p2Score').text())+1);
 }
 
 determineWinner = function () { 
@@ -84,7 +84,7 @@ determineWinner = function () {
 		$("#notificationCenter").text("Computer Wins!");
 		compWin();
 	}
-	if (randomNumber === 2 && radio1.checked){
+	else if (randomNumber === 2 && radio1.checked){
 		$("#notificationCenter").text("Computer Wins!");
 		compWin();
 	}
@@ -95,13 +95,13 @@ determineWinner = function () {
 		$("#notificationCenter").text("Player 1 Wins!");
 		p1Win();
 	}
-	if (randomNumber === 3 && radio1.checked){
-		$("#notificationCenter").text("Computer Wins!");
-		compWin();
-	}
-	else if (randomNumber === 3 && radio2.checked){
+	else if (randomNumber === 3 && radio1.checked){
 		$("#notificationCenter").text("Player 1 Wins!");
 		p1Win();
+	}
+	else if (randomNumber === 3 && radio2.checked){
+		$("#notificationCenter").text("Computer Wins!");
+		compWin();
 	}
 	else if (randomNumber === 3 && radio3.checked){
 		$("#notificationCenter").text("Tie Game!");
