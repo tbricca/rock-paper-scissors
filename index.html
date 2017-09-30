@@ -9,50 +9,66 @@
 	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 </head>
 <body>
-	<h1> Rock Paper Scissors </h1>
-		<div id="box1">
-			<div id=player1><h2>Player 1</h2></div>
-			<p> Score:
-			<div id= "p1Score">0</div>
-			</p>
-			
+	<header>
+		<div class="box1 scoreboard">
+			<div id=player1>
+				<h2>Player 1</h2>
+			</div>
+			<div>
+				<p> Score: </p>
+			</div>
+			<div id= "p1Score" class="score">0
+			</div>
 		</div>
-		<div id="notificationCenter">Player 1 Select Your Weapon</div>
 
-		<div id=selectors>
+		<h1> Rock Paper Scissors </h1>
+
+		<div class="box2 scoreboard">
+			<div id= player2>
+				<h2>Computer</h2>
+			</div>
+			<div>
+				<p> Score: </p>
+			</div>
+			<div id= p2Score class="score">0
+			</div>
+		</div>
+	</header>
+
+	<div class="top-box">   
+
+
+		<div class="notification-box">
+			<div id="notificationCenter">Player 1 Select Your Weapon</div>
+			<div id=selectors>
 				<input type= radio id="rockRadio" name="foo">Rock
 				<input type= radio id="paperRadio" name="foo">Paper
 				<input type= radio id="scissorRadio" name="foo">Scissors
 				<button type="submit" id="submit">Submit and Play</button>
 				<button type="reset" id="reset">Reset</button>
+			</div>
 		</div>
 
-		<div id="countdown">
-		    <img id="three" src="images/3num.png">
-		    <img id="two" src="images/number-2.png">
-		    <img id="one" src="images/number-one-.png">
-		    <img id="fight" src="images/fight!.png">
-		</div>
 		
-		<div id="box2">
-			<div id= player2><h2>Computer</h2></div>
-			<p> Score:
-			<div id= p2Score>0</div>
-			</p>
-		</div>
+	</div>
 
-
-		<div id="p1Image">
-			<img id="the-rock" src="images/The-rock.png">
-			<img id="paper" src="images/paper.png" >
-			<img id="scissor" src="images/scissor.png">
+	<div class="player-sequence"> 
+		<div class="player">
+			<img id="the-rock" class="p1-image" src="images/The-rock.png">
+			<img id="paper" class="p1-image" src="images/paper.png" >
+			<img id="scissor" class="p1-image" src="images/scissor.png">
 		</div>
-
-		<div id="computerImage">
-			<img id="the-rock2" src="images/The-rock.png">
-			<img id="paper2" src="images/paper.png" >
-			<img id="scissor2" src="images/scissor.png">
+		<div class="countdown">
+		    <img id="three" class="countdown-image" src="images/3num.png">
+			<img id="two" class="countdown-image" src="images/number-2.png">
+		    <img id="one" class="countdown-image" src="images/number-one-.png"> 
 		</div>
+		<div class="computer">
+			<img id="the-rock2" class="computer-image" src="images/The-rock.png">
+			<img id="paper2" class="computer-image" src="images/paper.png" >
+			<img id="scissor2" class="computer-image" src="images/scissor.png">
+		</div>
+	</div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="script.js"></script>	

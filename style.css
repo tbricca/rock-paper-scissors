@@ -6,41 +6,42 @@ body {
 	background-size: cover;
 	font-family: 'Bangers', cursive;
 }
-h1 {
+header h1 {
 	text-align: center;
 	color: black;
-	font-family: 'Bangers', cursive;
 	font-size: 70px;
-	margin-top: auto;
+	margin: 0;
 }
-
-h2 {
+header {
+	display: flex;
+	justify-content: space-between;
+	max-height: 170px;
+}
+.scoreboard h2 {
+	font-size: 40px;
+	margin: 1em 0 0 0;
+}
+.scoreboard {
+	height: 300px;
+	width: 250px;
+	padding: 0 3em;
+}
+.scoreboard p {
 	font-size: 30px;
+	margin: 0;
 }
 
-
-
-#box1 {
-	float: left;
-	vertical-align: top;
-	height: 300px;
-	width: 250px;
-	position: absolute;
-	top: 0px;
-	left: 30px;	
-}
-
-#box2 {
-	float: right;
-	height: 300px;
-	width: 250px;
-	position: absolute;
-	top: 0px;
-	right: 0px;	
-}
 #player1 {
 	text-decoration: underline;
 	font-size: 40px;
+}
+.score {
+	font-size: 40px;
+}
+
+.box2.scoreboard {
+	text-align: right;
+	
 }
 
 #player2 {
@@ -48,16 +49,9 @@ h2 {
 	font-size: 30px;
 }
 
-#p1Score {
-	font-size: 40px;
-}
-
-#p2Score {
-	font-size: 40px;
-}
-
-p {
-	font-size: 20px;
+.top-box {
+	display: flex;
+    justify-content: space-around;
 }
 
 #notificationCenter {
@@ -101,96 +95,53 @@ p {
 	font-family: 'Bangers', cursive;
 }
 
+.player-sequence {
+	display: flex;
+	height: 320px;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.p1-image {
+	height: 320px;
+	
+}
+.computer-image {
+	height: 320px;
+	
+}
+
 #the-rock {
-	height: 300px;
-	width: 225px;
-
 	display: none;
-	position: absolute;
-	left:250px;
-	bottom:20px;
 }
-
 #paper {
-	height: 300px;
-	width: 225px;
 	display: none;
-	position: absolute;
-	left:250px;
-	bottom:20px;
 }
-
 #scissor {
-	height: 300px;
-	width: 225px;
 	display: none;
-	position: absolute;
-	left:250px;
-	bottom:20px;
 }
-
 #the-rock2 {
-	height: 300px;
-	width: 225px;
 	display: none;
-	position: absolute;
-	right:250px;
-	bottom:20px;
 }
-
 #paper2 {
-	height: 300px;
-	width: 200px;
 	display: none;
-	position: absolute;
-	right:250px;
-	bottom:20px;
 }
-
 #scissor2 {
-	height: 300px;
-	width: 225px;
 	display: none;
-	position: absolute;
-	right:250px;
-	bottom:20px;
 }
-
-
-#countdown {
-	top: 50%;
-	left: 50%;
-	margin-top: 10px;
-  	margin-left: 500px;
+.countdown-image {
+	height: 250px;
+	margin-top: 2em;
+	
 }
-
 #three {
-	height: 350px;
-	width: 225px;
 	display: none;
 }
-
 #two {
-	height: 350px;
-	width: 225px;
 	display: none;
 }
-#fight {
-	height: 350px;
-	width: 225px;
-	display: none;
-}
-
 #one {
-	height: 350px;
-	width: 225px;
 	display: none;
-
-
-
-
-
-
-
+}
 
 

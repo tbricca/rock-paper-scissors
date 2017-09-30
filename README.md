@@ -19,6 +19,6 @@
 
  ## I built this game to better hone in my understanding of Jquery and Javascript as I had trouble with it on the previous deliverables. I begin by psuedo coding and drawing out the idea of the game in my notebook. I had thought about having a Player 2 option, but it seemed like it would defeat the challenge of the game if the player could see on the screen what the other player was going to use. I then utilized Trello and created a scrum board for it to help figure out my process.
 
- For my next project I would like to build something that excites me a little more. With rock, paper, scissors there isn't too much to build upon. 
+ My next steps will be to add a Player 2 function along with a few more animations to bring some more excitement to the game.
 
 

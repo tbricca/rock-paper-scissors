@@ -1,6 +1,9 @@
 
-
+var radio1=document.getElementById ("rockRadio")
+var radio2=document.getElementById ("paperRadio")
+var radio3=document.getElementById ("scissorRadio")
 var notificationUpdate = document.getElementById ("notificationCenter")
+var playerChoice = ""
 
 $('#rockRadio').click(function(){
 	$("#rockRadio").is(':checked');
@@ -8,6 +11,8 @@ $('#rockRadio').click(function(){
 	$("#paper").css("display","none");
 	$("#scissor").css("display","none");
 	$("#notificationCenter").text("Click Submit to Face Your Destiny");
+
+	playerChoice=$("#the-rock");
 });
 
 $('#paperRadio').click(function(){
@@ -15,6 +20,8 @@ $('#paperRadio').click(function(){
 	$("#the-rock").css("display","none");
 	$("#scissor").css("display","none");
 	$("#notificationCenter").text("Click Submit to Face Your Destiny");
+
+	playerChoice=$("#paper");
 });
 
 $('#scissorRadio').click(function(){
@@ -22,6 +29,8 @@ $('#scissorRadio').click(function(){
 	$("#the-rock").css("display","none");
 	$("#paper").css("display","none");
 	$("#notificationCenter").text("Click Submit to Face Your Destiny");
+
+	playerChoice=$("#scissor");
 });
 
 var randomNumber = 0;
@@ -31,7 +40,7 @@ $("#submit").click(function(){
 			$("#one").fadeIn(500).fadeOut(500);
 		});	
 	});
-
+	$(".p1-image").css("display","none");
 	$('#submit').attr('disabled','disabled');
 	randomNumber = (Math.floor(Math.random() * 3) + 1);
 	setTimeout (function(){
@@ -48,22 +57,22 @@ var computerChoice = function() {
 		$("#the-rock2").fadeIn();
 		$("#paper2").css("display","none");
 		$("#scissor2").css("display","none");
+		playerChoice.fadeIn();
 	}
 	else if (randomNumber === 2) {
 		$("#paper2").fadeIn();
 		$("#the-rock2").css("display","none");
 		$("#scissor2").css("display","none");
+		playerChoice.fadeIn();
 	}
 	else if (randomNumber === 3) {
 		$("#scissor2").fadeIn();
 		$("#the-rock2").css("display","none");
 		$("#paper2").css("display","none");
+		playerChoice.fadeIn();
+
 	}
 };
-
-var radio1=document.getElementById ("rockRadio")
-var radio2=document.getElementById ("paperRadio")
-var radio3=document.getElementById ("scissorRadio")
 
 var p1Win = function () {
 	$('#p1Score').text(Number($('#p1Score').text())+1);
@@ -123,17 +132,7 @@ automaticRefresh = function () {
 }
 
 $("#reset").click(function(){
-	$("#the-rock").css("display","none");
-	$("#paper").css("display","none");
-	$("#scissor").css("display","none");
-	$("#the-rock2").css("display","none");
-	$("#paper2").css("display","none");
-	$("#scissor2").css("display","none");
-	$("#notificationCenter").text("Player 1 Select Your Weapon");
-	$('#rockRadio').removeAttr("checked");
-	$('#paperRadio').removeAttr("checked");
-	$('#scissorRadio').removeAttr("checked");
-	$('#submit').removeAttr('disabled');
+	automaticRefresh ();
 	$('#p1Score').text(Number($('p1Score').text())*0);
 	$('#p2Score').text(Number($('p2Score').text())*0);
 })
